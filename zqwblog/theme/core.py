@@ -33,7 +33,7 @@ class PageTheme():
 
         self.html.append("""\n</html>""")
         self.html = '\n'.join(self.html)
-        with open(self.path + self.name + '.html', 'w') as f:
+        with open(self.path + self.name + '.html', 'w', encoding='utf8') as f:
             f.write(self.html)
 
     def check_path(self):

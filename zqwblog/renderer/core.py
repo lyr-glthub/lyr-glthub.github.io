@@ -45,7 +45,7 @@ class OrgPost:
 
 class MdPost:
     def __init__(self, file_path):
-        with open(file_path, 'r') as f:
+        with open(file_path, 'r', encoding='utf8') as f:
             self.ori_str = f.read()
         self.file_path = file_path
         root_extension = os.path.split(file_path)[-1]

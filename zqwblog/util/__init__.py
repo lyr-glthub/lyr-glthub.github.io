@@ -17,13 +17,13 @@ def clean_dir(dir):
 
 
 def load_file(path):
-    with open(path, 'r') as f:
+    with open(path, 'r', encoding='utf8') as f:
         res = f.read()
     return res
 
 
 def dump_file(path, data):
-    with open(path, 'w') as f:
+    with open(path, 'w', encoding='utf8') as f:
         f.write(data)
 
 
